@@ -1,2 +1,2 @@
-# Python_Projects
+# Learning Python
 Python projects for self learning 
