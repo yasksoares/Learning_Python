@@ -32,3 +32,21 @@ print(10 == 11) #Não => False (Falso)
 print(type(10 == 10))
 print(type(True))
 print(type(False))
+
+# cnversão de tipos, coerção
+# type conversion, typecasting, coercion
+# é o ato de converter um tipo em outro
+# tipos imutáveis e primitivos
+# str, float, int, bool
+
+print(1 + 1) 
+print('a' + 'b')
+print(int('3'), type(int('3')))
+print(int('3') + 1)
+print(type(float('4') + 4.8))
+print(int('4') + 13.9)
+
+# uma string vazia é considerada False
+print(bool(''))
+print(bool(' '))
+print(str(11) + 'x')
