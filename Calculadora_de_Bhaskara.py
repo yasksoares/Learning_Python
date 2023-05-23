@@ -5,7 +5,7 @@ B = float(input('\nDigite o valor de b: '))
 C = float(input('\nDigite o valor de c: '))
 delta = float((B **2) - (4*A*C))
 
-if delta < 0:
+if delta <= 0:
     print('A equação não possui resultado real.')
 elif A == 0 or B == 0 or C ==0:
     print('Valor indeterminado')
