@@ -7,8 +7,10 @@ delta = float((B **2) - (4*A*C))
 
 if delta <= 0:
     print('A equação não possui resultado real.')
-elif A == 0 or B == 0 or C ==0:
+elif A == 0:
     print('Valor indeterminado')
+elif B == 0 or C == 0:
+    print('Insira valores diferentes de 0 para B e C.')
 else:
     x1 = (-B + (delta ** 0.5))/(2 * A)
     x2 = (-B - (delta ** 0.5))/(2 * A)
