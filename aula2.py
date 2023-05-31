@@ -9,4 +9,4 @@ print(78, 910, sep="MARIA") #argumentos nomeados
 
 print(12, 34, end = "##") #argumentos nomeados
 
-# o python diferencia letras maiúsculas e minúsculas
+# o python diferencia as letras maiúsculas e minúsculas
