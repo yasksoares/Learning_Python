@@ -7,22 +7,28 @@
 # 0 0.0 '' False
 # Também existe o None que é usado para representar um não valor
 
-entrada = input('[E]ntrar [S]air: ')
+entrada = str(input('[E]ntrar [S]air: ')).upper()
+usuario = input('Digite o usuário: ')
 senha_digitada = input('Senha: ')
 
+usuario_permitido = 'usuario teste'
 senha_permitida = '123456'
 # if true
 # if condicao: 
-if entrada == 'E' and senha_digitada == senha_permitida:
+if entrada == 'E' and usuario == usuario_permitido and senha_digitada == senha_permitida:
     print('Entrar')
-else:
+elif entrada == 'S':
     print('Sair')
+elif usuario != usuario_permitido or senha_digitada != senha_permitida:
+    print('Usuário ou senha inválido!')
+else:
+    print('Digite algo válido')
 
 # Avaliação de curto-circuito
-print(True and False and True)
-print(bool(0))
-print(bool(' '))
-print(True and 0 and True)
+# print(True and False and True)
+# print(bool(0))
+# print(bool(' '))
+# print(True and 0 and True)
 
-if 0 and 1:
-    print( True and 1) # não será exibido nada, pois apenas o 0 no if representa falsy
+# if 0 and 1:
+#     print( True and 1) # não será exibido nada, pois apenas o 0 no if representa falsy
